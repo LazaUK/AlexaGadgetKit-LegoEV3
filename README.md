@@ -1,4 +1,4 @@
-# Alexa Gadget Kit (AGT): Integration of Lego EV3 Brick with Amazon Echo
+# Alexa Gadget Toolkit (AGT): Integration of Lego EV3 Brick with Amazon Echo
 This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice Challenge](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f) at Hackster.io. So, ideally you should complete all 4 missions from that challenge first and then jump to Step 1 of this tutorial to carry on.
 
 If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps below in sequence.
