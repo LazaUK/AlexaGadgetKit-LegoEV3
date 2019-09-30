@@ -1,17 +1,15 @@
 # Alexa Gadget Kit: Integration of Lego EV3 Brick with Amazon Echo
-This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice Challenge](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f) at Hackster.io. So, ideally you should complete all 4 missions from that challenge and then jump to Step 1 of this tutorial to carry on.
+This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice Challenge](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f) at Hackster.io. So, ideally you should complete all 4 missions from that challenge first and then jump to Step 1 of this tutorial to carry on.
 
-If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps below in sequence.
-## Pre-requisites:
-- You should have access to SmartEdge Agile device from [AVNET](https://www.avnet.com/wps/portal/us/solutions/iot/building-blocks/smartedge-agile) and Octonion;
-- You should train the model in [Brainium portal](https://www.brainium.com/) and deploy them to SmartEdge Agile device;
-- You should also have smartphone or Raspberry Pi with Brainium Gateway app installed to enable data streaming from device over to the portal
-
+If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps in sequence.
+## Pre-requisites: 
+- 
+For this tutorial, you would need the following components:
+- Lego Mindstorms EV3 Robotics Kit [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
+- Amazon Echo device compatible with Alexa Gadget Toolkit [Documentation link](https://developer.amazon.com/docs/alexa-gadgets-toolkit/understand-alexa-gadgets-toolkit.html#devices);
 ![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
-
-
-## High-Level Architecture
+## Step 0 - Setup
 This is high-level architecture with all the main blocks of the target solution.
 ![ha-architecture](Brainium_Schematics.png)
 Training motion recognition and sync into Brainium portal is one of the pre-requisites. To learn more about that process, please refer to the Brainium [documentation](https://www.brainium.com/gesture-control)
