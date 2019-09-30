@@ -1,5 +1,6 @@
 # Alexa Gadget Kit: Integration of Lego EV3 Brick with Amazon Echo
 This tutorial can act as a continuation of the excellent [LEGO MINDSTORMS Voice Challenge](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f). So, ideally you should complete all 4 missions from that challenge and then jump to Step 1 of this tutorial to carry on.
+
 If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps below in sequence.
 ## Pre-requisites:
 - You should have access to SmartEdge Agile device from [AVNET](https://www.avnet.com/wps/portal/us/solutions/iot/building-blocks/smartedge-agile) and Octonion;
