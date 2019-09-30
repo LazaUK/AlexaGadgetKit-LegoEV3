@@ -29,6 +29,9 @@ For this tutorial, you would need the following hardware components:
 9. Then **Save Model** and **Build Model** using buttons in the upper part of the screen. ![screenshot_1.9](images/screenshot_step1.9.png)
 10. From the top navigation bar select **Code**, then copy content of Git-attached **alexaskill-nodejs/lambda/index.js, alexaskill-nodejs/lambda/package.json and alexaskill-nodejs/lambda/util.js** into relevant files under shown **Skill Code/lambda** directory. ![screenshot_1.10](images/screenshot_step1.10.png)
 11. Click **create file** icon, enter the name as **lambda/custom.js** and copy there content from Git-attached **alexaskill-nodejs/lambda/custom.js**. ![screenshot_1.11](images/screenshot_step1.11.png)
+12. **Save** all the changes, and the **Deploy** your Alexa skill, using relevant buttons in the upper part of the screen. ![screenshot_1.12](images/screenshot_step1.12.png)
+13. Upon successful deployment, from the top navigation bar select **Test**, then enable testing in **Development**. ![screenshot_1.13](images/screenshot_step1.13.png)
+14. 
 
 ## Step 2 - Alexa Gadget registration
 
