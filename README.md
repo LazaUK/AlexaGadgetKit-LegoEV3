@@ -22,6 +22,8 @@ For this tutorial, you would need the following hardware components:
 2. Then from the top menu select **Alexa -> Alexa Skills Kit**. ![screenshot_1.2](images/screenshot_step1.2.png)
 3. Press **Create Skill** button and provide a name and default language for your new Alexa skill. ![screenshot_1.3](images/screenshot_step1.3.png)
 4. In "Choose a model to add to your skill” section select **Custom**. ![screenshot_1.4](images/screenshot_step1.4.png)
+5. In "Choose a method to host your skill's backend resources" section select **Alexa-Hosted (Node.js)**. ![screenshot_1.5](images/screenshot_step1.5.png)
+
 
 
 ## Step 2 - Alexa Gadget registration
