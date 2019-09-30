@@ -23,6 +23,7 @@ For this tutorial, you would need the following hardware components:
 3. Press **Create Skill** button and provide a name and default language for your new Alexa skill. ![screenshot_1.3](images/screenshot_step1.3.png)
 4. In "Choose a model to add to your skill” section select **Custom**. ![screenshot_1.4](images/screenshot_step1.4.png)
 5. In "Choose a method to host your skill's backend resources" section select **Alexa-Hosted (Node.js)**. ![screenshot_1.5](images/screenshot_step1.5.png)
+6. Then press **Create skill** button in the upper right corner. It will take about one minute to create your skill and open it in Alexa Developer Console.
 
 
 
