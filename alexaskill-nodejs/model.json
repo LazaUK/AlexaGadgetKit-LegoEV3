@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "robot quiz master",
+            "invocationName": "robot dice roller",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
