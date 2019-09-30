@@ -1,1 +1,79 @@
-
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "robot quiz master",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SetAnswerIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "set right answer to {Answer}",
+                        "set {Answer} as right answer",
+                        "set answer to {Answer}"
+                    ]
+                },
+                {
+                    "name": "SetCommandIntent",
+                    "slots": [
+                        {
+                            "name": "Command",
+                            "type": "CommandType"
+                        }
+                    ],
+                    "samples": [
+                        "activate {Command} mode",
+                        "activate {Command}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "CommandType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "next round"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "next question"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quiz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "game"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
