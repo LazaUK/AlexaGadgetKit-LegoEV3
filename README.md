@@ -25,7 +25,7 @@ For this tutorial, you would need the following hardware components:
 5. In "Choose a method to host your skill's backend resources" section select **Alexa-Hosted (Node.js)**. ![screenshot_1.5](images/screenshot_step1.5.png)
 6. Then press **Create skill** button in the upper right corner. It will take about one minute to create your skill and open it in Alexa Developer Console.
 7. From the left navigation bar select **Interfaces**, then on the right side activate **Custom Interface Controller**. It will allow Echo device to send commands / directives to EV3 Brick and receive events from it back. ![screenshot_1.7](images/screenshot_step1.7.png)
-
+8. Now from the left navigation bar select **JSON Editor**, then replace schema definition on the right with content from attached **alexaskill-nodejs/model.json** file. ![screenshot_1.8](images/screenshot_step1.8.png)
 
 
 ## Step 2 - Alexa Gadget registration
