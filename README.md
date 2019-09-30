@@ -3,10 +3,10 @@ This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice C
 
 If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps in sequence.
 ## Pre-requisites: 
-- 
+
 For this tutorial, you would need the following components:
-- Lego Mindstorms EV3 Robotics Kit [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
-- Amazon Echo device compatible with Alexa Gadget Toolkit [Documentation link](https://developer.amazon.com/docs/alexa-gadgets-toolkit/understand-alexa-gadgets-toolkit.html#devices);
+- Lego Mindstorms EV3 Robotics Kit. See the [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
+- Amazon Echo device compatible with Alexa Gadget Toolkit. See the [Documentation link](https://developer.amazon.com/docs/alexa-gadgets-toolkit/understand-alexa-gadgets-toolkit.html#devices);
 ![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
 ## Step 0 - Setup
