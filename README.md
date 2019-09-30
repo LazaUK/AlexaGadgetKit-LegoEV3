@@ -31,8 +31,8 @@ For this tutorial, you would need the following hardware components:
 11. Click **create file** icon, enter the name as **lambda/custom.js** and copy there content from Git-attached **alexaskill-nodejs/lambda/custom.js**. ![screenshot_1.11](images/screenshot_step1.11.png)
 12. **Save** all the changes, and the **Deploy** your Alexa skill, using relevant buttons in the upper part of the screen. ![screenshot_1.12](images/screenshot_step1.12.png)
 13. Upon successful deployment, from the top navigation bar select **Test**, then enable testing in **Development**. ![screenshot_1.13](images/screenshot_step1.13.png)
-14. Open your skill using Skill Invocation Name, e.g. "**open robot dice roller**". At this stage you should get a response, stating "**I couldn't find an EV3 Brick connected to this Echo device. Please check to make sure your EV3 Brick is connected, and try again.**". It proves that the skill is functional, although it cannot coonect to EV3 back yet - something that we'll configure in the next step.
-> **Note:** Invocation name can be set or changes in Alexa skill's **Build** section of Developer Console.
+14. Open your skill using Skill Invocation Name, e.g. "**open robot dice roller**". At this stage you should get a response, stating "**I couldn't find an EV3 Brick connected to this Echo device. Please check to make sure your EV3 Brick is connected, and try again.**". It proves that the skill is functional, although it cannot coonect to EV3 back yet - something that we'll look at in the next tutorial step.
+> **Note:** Invocation name can be set or changed in Alexa skill's **Build** section of Developer Console.
 
 ## Step 2 - Alexa Gadget registration
 
