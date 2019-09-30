@@ -2,6 +2,7 @@
 This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice Challenge](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f) at Hackster.io. So, ideally you should complete all 4 missions from that challenge first and then jump to Step 1 of this tutorial to carry on.
 
 If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps below in sequence.
+
 ## Pre-requisites: 
 For this tutorial, you would need the following hardware components:
 - Lego Mindstorms EV3 Robotics Kit. See the [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
@@ -17,6 +18,7 @@ For this tutorial, you would need the following hardware components:
 4. Finally, [set up the Alexa Gadgets Toolkit (AGT) Python Software](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f#toc-set-up-the-alexa-gadgets-toolkit-python-software-5), so that your EV3 robot can interact via **AGT interface** with your new Alexa skill that you will deploy shortly.
 
 ## Step 1 - Create your Alexa skill
+1. 
 
 ## Step 2 - Alexa Gadget registration
 
