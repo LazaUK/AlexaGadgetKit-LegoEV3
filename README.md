@@ -3,18 +3,15 @@ This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice C
 
 If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps in sequence.
 ## Pre-requisites: 
-
 For this tutorial, you would need the following components:
 - Lego Mindstorms EV3 Robotics Kit. See the [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
 - Amazon Echo device compatible with Alexa Gadget Toolkit. See the [Documentation link](https://developer.amazon.com/docs/alexa-gadgets-toolkit/understand-alexa-gadgets-toolkit.html#devices);
 ![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
 ## Step 0 - Setup
-This is high-level architecture with all the main blocks of the target solution.
-![ha-architecture](Brainium_Schematics.png)
-Training motion recognition and sync into Brainium portal is one of the pre-requisites. To learn more about that process, please refer to the Brainium [documentation](https://www.brainium.com/gesture-control)
+- Build your EV3 robot, following instructions from [Lego manual](https://www.lego.com/cdn/cs/set/assets/blt2fdb839be7a53b96/31313_EV3RSTORM_2016.pdf)
+- 
 
-Parts below will describe how to enable MQTT client to retrieve data, upload it into Azure IoT Hub and the use scripting within Azure Stream Analytics to detect anomalies.
 ## MQTT Client
 Provided [Python script](brainium_mqtt_git.py) above allows the use MQTT protocol for the interaction with both Brainium API (to subscribe to the motion events) and also to upload then some of the details into Azure IoT Hub's endpoint for the further processing.
 
