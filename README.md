@@ -11,7 +11,7 @@ For this tutorial, you would need the following components:
 ## Step 0 - Setup
 - Build your **EV3 robot**, following the instructions from the [Lego manual](https://www.lego.com/cdn/cs/set/assets/blt2fdb839be7a53b96/31313_EV3RSTORM_2016.pdf).
 - Next, install **ev3dev** (Debian Linux system based operating system), so that you launch Python 3.x based applications  on your EV3 Brick. Detailed instruction can be found [here](https://www.ev3dev.org/docs/getting-started/)
-> **Notes:** You need to complete steps 1 to 6 in **eve3dev** installation above. As a reward, in Step 6 EV3 robot will be able to read your fortune :-).
+> **Note:** You need to complete steps 1 to 6 in **eve3dev** installation above. As a reward, in Step 6 EV3 robot will be able to read your fortune :-)
 - tt
 
 test
