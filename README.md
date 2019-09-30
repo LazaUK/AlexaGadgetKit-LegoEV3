@@ -6,7 +6,7 @@ If not, don't worry. Start with Step 0 below to setup the environment and then f
 For this tutorial, you would need the following hardware components:
 - Lego Mindstorms EV3 Robotics Kit. See the [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
 - Amazon Echo device compatible with Alexa Gadget Toolkit. See the [Documentation link](https://developer.amazon.com/docs/alexa-gadgets-toolkit/understand-alexa-gadgets-toolkit.html#devices);
-- Computer with Internet connectivity
+- Computer with Internet connectivity and Visual Studio Code IDE. You can download Visual Studio Code from [here](https://code.visualstudio.com/download)
 ![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
 ## Step 0 - Setup
