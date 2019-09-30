@@ -7,7 +7,7 @@ If not, don't worry. Start with Step 0 below to setup the environment and then f
 - You should train the model in [Brainium portal](https://www.brainium.com/) and deploy them to SmartEdge Agile device;
 - You should also have smartphone or Raspberry Pi with Brainium Gateway app installed to enable data streaming from device over to the portal
 
-
+![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
 
 
