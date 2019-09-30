@@ -9,8 +9,9 @@ For this tutorial, you would need the following components:
 ![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
 ## Step 0 - Setup
-- Build your EV3 robot, following instructions from [Lego manual](https://www.lego.com/cdn/cs/set/assets/blt2fdb839be7a53b96/31313_EV3RSTORM_2016.pdf)
-- 
+- Build your EV3 robot, following instructions from the [Lego manual](https://www.lego.com/cdn/cs/set/assets/blt2fdb839be7a53b96/31313_EV3RSTORM_2016.pdf)
+- tests
+test
 
 ## MQTT Client
 Provided [Python script](brainium_mqtt_git.py) above allows the use MQTT protocol for the interaction with both Brainium API (to subscribe to the motion events) and also to upload then some of the details into Azure IoT Hub's endpoint for the further processing.
