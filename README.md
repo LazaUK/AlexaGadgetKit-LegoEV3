@@ -20,7 +20,8 @@ For this tutorial, you would need the following hardware components:
 ## Step 1 - Create your Alexa skill
 1. Sign in with your Amazon developer account at [developer.amazon.com](https://developer.amazon.com/). If you don't have an account yet, you can create new one.
 2. Then from the top menu select **Alexa -> Alexa Skills Kit**. ![screenshot_1.2](images/screenshot_step1.2.png)
-3. 
+3. Press **Create Skill** button and provide a name for your new Alexa skill. ![screenshot_1.3](images/screenshot_step1.3.png)
+4. 
 
 ## Step 2 - Alexa Gadget registration
 
