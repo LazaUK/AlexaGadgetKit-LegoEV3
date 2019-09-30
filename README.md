@@ -18,7 +18,8 @@ For this tutorial, you would need the following hardware components:
 4. Finally, [set up the Alexa Gadgets Toolkit (AGT) Python Software](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f#toc-set-up-the-alexa-gadgets-toolkit-python-software-5), so that your EV3 robot can interact via **AGT interface** with your new Alexa skill that you will deploy shortly.
 
 ## Step 1 - Create your Alexa skill
-1. 
+1. Sign in with your Amazon developer account at [developer.amazon.com](https://developer.amazon.com/). If you don't have an account yet, you can create a new one.
+
 
 ## Step 2 - Alexa Gadget registration
 
