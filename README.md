@@ -1,7 +1,7 @@
 # Alexa Gadget Kit: Integration of Lego EV3 Brick with Amazon Echo
 This tutorial can act as a continuation of an excellent [LEGO MINDSTORMS Voice Challenge](https://www.hackster.io/alexagadgets/lego-mindstorms-voice-challenge-setup-17300f) at Hackster.io. So, ideally you should complete all 4 missions from that challenge first and then jump to Step 1 of this tutorial to carry on.
 
-If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps in sequence.
+If not, don't worry. Start with Step 0 below to setup the environment and then follow all other steps below in sequence.
 ## Pre-requisites: 
 For this tutorial, you would need the following components:
 - Lego Mindstorms EV3 Robotics Kit. See the [Amazon link](https://www.amazon.co.uk/LEGO-31313-MINDSTORMS-Servo-Motor-Programmable/dp/B00BMKLVJ6);
@@ -9,8 +9,9 @@ For this tutorial, you would need the following components:
 ![ev3-and-echo](images/EV3_and_Echo_scene.jpg)
 
 ## Step 0 - Setup
-- Build your EV3 robot, following instructions from the [Lego manual](https://www.lego.com/cdn/cs/set/assets/blt2fdb839be7a53b96/31313_EV3RSTORM_2016.pdf)
+- Build your EV3 robot, following the instructions from the [Lego manual](https://www.lego.com/cdn/cs/set/assets/blt2fdb839be7a53b96/31313_EV3RSTORM_2016.pdf)
 - tests
+
 test
 
 ## MQTT Client
