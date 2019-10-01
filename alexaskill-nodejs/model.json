@@ -28,9 +28,8 @@
                         }
                     ],
                     "samples": [
-                        "set right answer to {Answer}",
-                        "set {Answer} as right answer",
-                        "set answer to {Answer}"
+                        "set number of steps to {Answer}",
+                        "set {Answer} as number of steps"
                     ]
                 },
                 {
@@ -42,6 +41,9 @@
                         }
                     ],
                     "samples": [
+                        "open {Command}",
+                        "start {Command} mode",
+                        "start {Command}",
                         "activate {Command} mode",
                         "activate {Command}"
                     ]
@@ -58,7 +60,7 @@
                         },
                         {
                             "name": {
-                                "value": "next question"
+                                "value": "next move"
                             }
                         },
                         {
