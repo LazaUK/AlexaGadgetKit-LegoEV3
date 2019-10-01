@@ -58,7 +58,7 @@ sudo python3 mission-dice.py
 ```
 If asked for a password, use **maker** (default password, unless you've changed it to something else). In a few minutes, EV3 should confirm that it has connected to Echo device. ![screenshot_3.4](images/screenshot_step3.4.png)
 
-Congratulations !! You have completed all the technical steps and should have now a paired EV3 + Echo solution. Go ahead and use it to roll virtual dice in your favourite board game(s) !!
+Congratulations !! You have completed all the technical steps and should have now a paired EV3 + Echo solution. Go ahead and use it to roll some virtual dice in your favourite board game(s) !!
 
 ## High level overview of solution logic
 
