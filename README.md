@@ -48,8 +48,17 @@ After completion of all the steps above we should have now Alexa skill hosted in
 1. First of all, you need to activate Bluetooth on EV3 Brick. Navigate to its **Wireless and Networks** menu, select **Bluetooth** and set it **on**.
 2. Second, open extract of this Git repo in Visual Studio Code. On EV3 side, only content of **agt-python** will be utilised: **mission-dice.ini** (which you updated in Step 2 above) and **mission-dice.py** (the actual EV3's logic, written in Python). From the lower part of the screen extend **EV3DEV Device Browser**, connect to your EV3 Brick and click **Send workspace to device** icon. It should upload our program to EV3 Robot's flash storage. ![screenshot_3.2](images/screenshot_step3.2.png)
 3. In **EV3DEV Device Browser**, right click your EV3 Brick and select **Open SSH Terminal**. You can execute now any commands directly on EV3. ![screenshot_3.3](images/screenshot_step3.3.png)
-4. 
+4. In SSH terminal switch to the directory holding your **mission-dice.ini** and **mission-dice.py**, e.g.
+```
+cd agt-python
+```
+then launch the program itself
+```
+sudo python3 mission-dice.py
+```
+If asked for a password, use **maker** (default, unless you've changed it to something else). In a few minutes, EV3 should confirm that it has connected to Echo device. ![screenshot_3.4](images/screenshot_step3.4.png)
 
+Congratulations !! You have completed all the technical settings and have paired EV3 and Echo solution. No time for fun - use your new solution to roll virtual dice !!
 
 ## High level overview of solution logic
 
