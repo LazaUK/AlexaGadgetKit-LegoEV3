@@ -48,8 +48,9 @@ After completion of all the steps above we should have now Alexa skill hosted in
 EV3 will be responsible for the colour analysis of the player's token or card and passing those details to Echo, which in turn will advise then each player on the number of steps (between 2 and 12) to be taken, immitating virtual dice rolling.
 
 1. First of all, you need to activate Bluetooth on EV3 Brick. Navigate to its **Wireless and Networks** menu, select **Bluetooth** and set it **on**.
-2. Second, open extract of this Git repo in Visual Studio Code. On EV3 side, only content of **agt-python** will be utilised: **mission-dice.ini** (which you updated in Step 2 above) and **mission-dice.py** (the actual EV3's logic, written in Python). Then from the lower part of the screen extend **EV3DEV Device Browser**, connect to your EV3 Brick and click **Send workspace to device** icon. It should upload our program to EV3 Robot's flash storage. ![screenshot_3.2](images/screenshot_step3.2.png)
-
+2. Second, open extract of this Git repo in Visual Studio Code. On EV3 side, only content of **agt-python** will be utilised: **mission-dice.ini** (which you updated in Step 2 above) and **mission-dice.py** (the actual EV3's logic, written in Python). From the lower part of the screen extend **EV3DEV Device Browser**, connect to your EV3 Brick and click **Send workspace to device** icon. It should upload our program to EV3 Robot's flash storage. ![screenshot_3.2](images/screenshot_step3.2.png)
+3. In **EV3DEV Device Browser**, right click your EV3 Brick and select **Open SSH Terminal**. You can execute now any commands directly on EV3. ![screenshot_3.3](images/screenshot_step3.3.png)
+4. 
 
 
 ## High level overview of solution logic
