@@ -8,6 +8,7 @@
  * RESPECT TO THESE MATERIALS, ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING 
  * THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
 */
+
 'use strict'
 
 const Alexa = require('ask-sdk-core');
@@ -106,4 +107,4 @@ module.exports = {
     IntentReflectorHandler,
     ErrorHandler,
     RequestInterceptor
-};
+    };

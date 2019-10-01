@@ -26,6 +26,13 @@ const NAMESPACE = 'Custom.Mindstorms.Gadget';
 // The name of the custom directive to be sent this skill
 const NAME_CONTROL = 'control';
 
+// The names of the colours, detected by the color sensor
+const COLOR_NAMES = ["No color", "Black", "Blue", "Green", "Yellow", "Red", "White", "Brown"];
+
+// Dice numbers for the random move of the player
+var DICE_MIN = 2; 
+var DICE_MAX = 12;
+
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
@@ -154,8 +161,10 @@ const EventsReceivedRequestHandler = {
         let speechOutput;
         if (name === 'Touch') {
             let answer = parseInt(payload.answer);
-            if (answer === 1) {
-                let speechOutput = "You provided the right token, thanks.";
+            if (answer > 0) {
+                var dice = Math.floor(Math.random() * (+DICE_MAX - +DICE_MIN)) + +DICE_MIN; 
+                let playerColor = COLOR_NAMES[answer];
+                let speechOutput = ("Player " + playerColor + ", please make " + dice + " steps ahead");
                 return handlerInput.responseBuilder
                     .speak(speechOutput, "REPLACE_ALL")
                     .withShouldEndSession(false)
@@ -163,7 +172,7 @@ const EventsReceivedRequestHandler = {
             }
         } else if (name === 'Quiz') {
             if ('rotation' in payload) {
-                speechOutput = "That for the end of the round.";
+                speechOutput = "End of the round.";
             }
 
         } else if (name === 'Speech') {
