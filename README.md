@@ -36,7 +36,8 @@ For this tutorial, you would need the following hardware components:
 
 ## Step 2 - Alexa Gadget registration
 Your EV3 Brick needs to be registsred as an **Alexa Gadget** to enable its integration and data exchange with compatible Echo device. 
-1. If you are still in Alexa Developer Console, click vertical ellipsis and select **Alexa Voice Service** option. ![screenshot_2.1](images/screenshot_step2.1.png)
+1. If you are still in Alexa Developer Console, click vertical ellipsis, select **Alexa Voice Service** option and then press **Products** button. ![screenshot_2.1](images/screenshot_step2.1.png)
+2. 
 
 ## Step 3 - Test EV3RSTORM with the Alexa skill
 
