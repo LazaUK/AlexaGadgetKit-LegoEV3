@@ -43,6 +43,11 @@ Your EV3 Brick needs to be registsred as an **Alexa Gadget** to enable its integ
 > **Note:** EV3 robot will use these credentials to authenticate itself and establish Bluetooth connectivity with the Echo device in Step 3 below.
 
 ## Step 3 - Test EV3RSTORM with the Alexa skill
+After completion all the steps above we have new Alexa skill built in the cloud and relevant credentials obtained for EV3 Brick function as an Alexa Gadget. Now, it's the moment of truth - to verify how EV3 and Echo can work in tandem to support games, which require the use of dice.
+
+EV3 will be responsible for the colour analysis of the player's token or card and pass those details to Echo, who will advise each player on the number of steps which need to be taken (between 2 and 12), immitating virtual dice rolling.
+
+1. tt
 
 ## High Level Overview of Solution Logic
 ```
