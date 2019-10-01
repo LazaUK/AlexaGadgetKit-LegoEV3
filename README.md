@@ -52,7 +52,7 @@ EV3 will be responsible for the colour analysis of the player's token or card an
 
 
 
-## High Level Overview of Solution Logic
+## High level overview of solution logic
 ```
 pip install paho-mqtt
 ```
