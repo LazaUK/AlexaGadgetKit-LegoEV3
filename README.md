@@ -38,6 +38,9 @@ For this tutorial, you would need the following hardware components:
 Your EV3 Brick needs to be registsred as an **Alexa Gadget** to enable its integration and data exchange with compatible Echo device. 
 1. If you are still in Alexa Developer Console, click vertical ellipsis, select **Alexa Voice Service** option and then press **Products** button. ![screenshot_2.1](images/screenshot_step2.1.png)
 2. Click **Create Product** button in the top right corner of the screen and fill in all the required fiedls. Ensure, that the product type is set to ***Alexa Gadget***, and the product category to ***Animatronic or Figure***. ![screenshot_2.2](images/screenshot_step2.2.png)
+3. Open newly created Product record and copy details of the system-generated **Amazon ID** and **Alexa Gadget Secret**. ![screenshot_2.3](images/screenshot_step2.3.png)
+
+
 
 ## Step 3 - Test EV3RSTORM with the Alexa skill
 
