@@ -31,10 +31,12 @@ For this tutorial, you would need the following hardware components:
 11. Click **create file** icon, enter the name as **lambda/common.js** and copy there content from Git-attached **alexaskill-nodejs/lambda/common.js**. ![screenshot_1.11](images/screenshot_step1.11.png)
 12. **Save** all the changes, and the **Deploy** your Alexa skill, using relevant buttons in the upper part of the screen. ![screenshot_1.12](images/screenshot_step1.12.png)
 13. Upon successful deployment, from the top navigation bar select **Test**, then enable testing in **Development**. ![screenshot_1.13](images/screenshot_step1.13.png)
-14. Open your skill using Skill Invocation Name, e.g. "**open robot dice roller**". As you are using simulator, you should get a response, stating "**I couldn't find an EV3 Brick connected to this Echo device. Please check to make sure your EV3 Brick is connected, and try again.**". It proves that the new Alexa skill is functional, but cannot coonect to EV3 Brick yet - something that we'll look at in the next tutorial step.![screenshot_1.14](images/screenshot_step1.14.png)
+14. Open your skill using Skill Invocation Name, e.g. "**open robot dice roller**". As you are using simulator, you should get a response, stating "**I couldn't find an EV3 Brick connected to this Echo device. Please check to make sure your EV3 Brick is connected, and try again.**". It proves that the new Alexa skill is functional, but cannot coonect to EV3 Brick yet - something that we'll look at in the next tutorial step. ![screenshot_1.14](images/screenshot_step1.14.png)
 > **Note:** Invocation name can be set or changed in Alexa skill's **Build** section of Developer Console.
 
 ## Step 2 - Alexa Gadget registration
+Your EV3 Brick needs to be registsred as an **Alexa Gadget** to enable its integration and data exchange with compatible Echo device. 
+1. If you are still in Alexa Developer Console, click vertical ellipsis and select **Alexa Voice Service** option. ![screenshot_2.1](images/screenshot_step2.1.png)
 
 ## Step 3 - Test EV3RSTORM with the Alexa skill
 
