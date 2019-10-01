@@ -31,14 +31,15 @@ For this tutorial, you would need the following hardware components:
 11. Click **create file** icon, enter the name as **lambda/common.js** and copy there content from Git-attached **alexaskill-nodejs/lambda/common.js**. ![screenshot_1.11](images/screenshot_step1.11.png)
 12. **Save** all the changes, and the **Deploy** your Alexa skill, using relevant buttons in the upper part of the screen. ![screenshot_1.12](images/screenshot_step1.12.png)
 13. Upon successful deployment, from the top navigation bar select **Test**, then enable testing in **Development**. ![screenshot_1.13](images/screenshot_step1.13.png)
-14. Open your skill using Skill Invocation Name, e.g. "**open robot dice roller**". At this stage you should get a response, stating "**I couldn't find an EV3 Brick connected to this Echo device. Please check to make sure your EV3 Brick is connected, and try again.**". It proves that the new Alexa skill is functional, although it cannot coonect to EV3 Brick yet - something that we'll look at in the next tutorial step.
+14. Open your skill using Skill Invocation Name, e.g. "**open robot dice roller**". As you are using simulator, you should get a response, stating "**I couldn't find an EV3 Brick connected to this Echo device. Please check to make sure your EV3 Brick is connected, and try again.**". It proves that the new Alexa skill is functional, but cannot coonect to EV3 Brick yet - something that we'll look at in the next tutorial step.
 > **Note:** Invocation name can be set or changed in Alexa skill's **Build** section of Developer Console.
+![screenshot_1.14](images/screenshot_step1.14.png)
 
 ## Step 2 - Alexa Gadget registration
 
 ## Step 3 - Test EV3RSTORM with the Alexa skill
 
-
+## High Level Overview of Solution Logic
 ```
 pip install paho-mqtt
 ```
