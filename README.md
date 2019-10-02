@@ -106,8 +106,18 @@ EV3 had its colour sensor set in Lego bricks colour detection mode, as per the c
 ```
 self.cl.mode = 'COL-COLOR'
 ```
-
-
+So, while **quiz mode** is **on**, it will check whether touch sensor is being pressed. If yes, it will read detected colour code from the colour sensor and send it as a part of touch even back to Echo device.
+```
+    while self.quiz_mode:
+        if self.ts.is_pressed:
+            print("Touch sensor pressed. Sending event to skill")
+            self.leds.set_color("LEFT", "RED", 1)
+            self.leds.set_color("RIGHT", "RED", 1)
+            self._send_event(EventName.TOUCH, {'answer': self.cl.value()})
+            # self.quiz_mode = False
+        time.sleep(0.2)
+    time.sleep(1)
+```
 
 
 
