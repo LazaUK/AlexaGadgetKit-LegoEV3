@@ -106,7 +106,7 @@ EV3 had its colour sensor set in Lego bricks colour detection mode, as per the c
 ```
 self.cl.mode = 'COL-COLOR'
 ```
-So, while **quiz mode** is **on**, it will check whether touch sensor is being pressed. If yes, it will read detected colour code from the colour sensor and send it as a part of touch even back to Echo device.
+So, while **quiz mode** is **on**, it will check whether touch sensor is being pressed. If yes, it will read detected colour code from the colour sensor and send it as a part of **Touch** event back to Echo device.
 ```
     while self.quiz_mode:
         if self.ts.is_pressed:
@@ -118,12 +118,26 @@ So, while **quiz mode** is **on**, it will check whether touch sensor is being p
         time.sleep(0.2)
     time.sleep(1)
 ```
-
-
-
-
-
-
+In Alexa skill's **index.js** file in line 30 we provided Echo with the array of colours that EV3's colour sensor can return.
+```
+const COLOR_NAMES = ["No color", "Black", "Blue", "Green", "Yellow", "Red", "White", "Brown"];
+```
+So, when Echo device receives an event and its **EventsReceivedRequestHandler** verifies that it's a **Touch** specific one, it will read the code. If it's bigger than 0, i.e. colour sensor was able to determine the colour, Alexa skill will generate a random number between 2 and 12 to simulate dice roller and then will instruct relevant player on how many steps he / she needs to take.
+```
+    if (name === 'Touch') {
+        let answer = parseInt(payload.answer);
+        if (answer > 0) {
+            var dice = Math.floor(Math.random() * (+DICE_MAX - +DICE_MIN)) + +DICE_MIN; 
+            let playerColor = COLOR_NAMES[answer];
+            let speechOutput = ("Player " + playerColor + ", please make " + dice + " steps ahead");
+            return handlerInput.responseBuilder
+                .speak(speechOutput, "REPLACE_ALL")
+                .withShouldEndSession(false)
+                .getResponse();
+        }
+    }
+```
+That's all ! Now try it for yourselves. And as they used to say in "Hunger Games", **may the odds be ever in your favor!!**.
 
 ## Working model - Demo
 You can find short demo of the working solution here on [YouTube](https://youtu.be/Gui9sqyglFw)
