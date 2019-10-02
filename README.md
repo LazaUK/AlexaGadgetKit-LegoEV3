@@ -61,7 +61,7 @@ If asked for a password, use **maker** (default password, unless you've changed 
 Congratulations !! You have completed all the technical steps and should have now a paired EV3 + Echo solution. Go ahead and use it to roll some virtual dice in your favourite board game(s) !!
 
 ## High level overview of the solution design
-We combine EV3 Brick and Amazon Echo's strengths in this solution. Echo device equipped with the new Alexa skill will provide speech recognition and speech synthesis capabilities, while EV3 Brick will use its colour sensor to identify the colour of the shown token or card, and its touch sensor to detect the haptic input from the player.
+We combine EV3 Brick and Amazon Echo's strengths in this solution. Echo device equipped with the new Alexa skill will provide speech recognition and speech synthesis capabilities, while EV3 Brick will use its colour sensor to identify the colour of the shown token or card, and its touch sensor to detect the haptic input from the player. ![EV3_and_Echo_HLD](images/EV3_and_Echo_HLD.png)
 
 If you'll check **index.js** of the hosted Alexa skill, you will see that upon activation of the skill through its invocation name, e.g.
 ```
