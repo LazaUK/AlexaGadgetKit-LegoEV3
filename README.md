@@ -67,16 +67,33 @@ If you'll check **index.js** of the hosted Alexa skill, you will see that upon a
 ```
 "Alexa, open robot dice roller"
 ```
-, it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, it will verbally confirm interface activation.
+, it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, it will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes.
 ```
-let speechOutput = "Ho-ho-ho, Chappie's voice interface activated";
-    return handlerInput.responseBuilder
-        .speak(speechOutput + BG_MUSIC)
-        .addDirective(Util.buildStartEventHandler(token,60000, {}))
-        .getResponse();
+    let speechOutput = "Ho-ho-ho, Chappie's voice interface activated";
+        return handlerInput.responseBuilder
+            .speak(speechOutput + BG_MUSIC)
+            .addDirective(Util.buildStartEventHandler(token,60000, {}))
+            .getResponse();
 ```
+Next, we'll use Alexa voice command to activate game mode.
+```
+"Alexa, activate game mode"
+```
+ Echo device will send a directive to EV3 Brick with the command name, and confirm back to use activation of the new command.
+```
+        let directive = Util.build(endpointId, NAMESPACE, NAME_CONTROL,
+            {
+                type: 'command',
+                command: command,
+                speed: speed
+            });
 
-
+        let speechOutput = `command ${command} activated`;
+        return handlerInput.responseBuilder
+            .speak(speechOutput + BG_MUSIC)
+            .addDirective(directive)
+            .getResponse();
+```
 
 
 
