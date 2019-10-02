@@ -67,7 +67,7 @@ If you'll check **index.js** of the hosted Alexa skill, you will see that upon a
 ```
 "Alexa, open robot dice roller"
 ```
-, it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, it will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes.
+It will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, it will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes.
 ```
     let speechOutput = "Ho-ho-ho, Chappie's voice interface activated";
         return handlerInput.responseBuilder
@@ -79,21 +79,35 @@ Next, we'll use Alexa voice command to activate game mode.
 ```
 "Alexa, activate game mode"
 ```
- Echo device will send a directive to EV3 Brick with the command name, and confirm back to use activation of the new command.
+Echo device will use its **SetCommandIntentHandler** to send a directive to EV3 Brick with the command name, and confirm verbally activation of the new command.
 ```
-        let directive = Util.build(endpointId, NAMESPACE, NAME_CONTROL,
-            {
-                type: 'command',
-                command: command,
-                speed: speed
-            });
+    let directive = Util.build(endpointId, NAMESPACE, NAME_CONTROL,
+        {
+            type: 'command',
+            command: command,
+            speed: speed
+        });
 
-        let speechOutput = `command ${command} activated`;
-        return handlerInput.responseBuilder
-            .speak(speechOutput + BG_MUSIC)
-            .addDirective(directive)
-            .getResponse();
+    let speechOutput = `command ${command} activated`;
+    return handlerInput.responseBuilder
+        .speak(speechOutput + BG_MUSIC)
+        .addDirective(directive)
+        .getResponse();
 ```
+On EV3 side we should have **mission-dice.py** application running. Its **on_custom_mindstorms_gadget_control** function will extract command name from the payload, set **quiz mode** on and fire event back to Echo, to request player's token.
+```
+    if command in Command.QUIZ.value:
+        self.quiz_mode = True
+        self._send_event(EventName.SPEECH, {'speechOut': "Show me your coloured token"})
+```
+Players in turn would need to show their tokens / cards to EV3 Brick by holding them 5-10mm above his colour sensor (left shoulder, if you assembled the robot as per the original Lego instruction) and then press its touch sensor (right shoulder, if you assembled the robot as per the original Lego instruction).
+
+EV3 had its colour sensor set in Lego bricks colour detection mode, as per the configuration on line 69.
+```
+self.cl.mode = 'COL-COLOR'
+```
+
+
 
 
 
