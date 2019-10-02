@@ -60,13 +60,29 @@ If asked for a password, use **maker** (default password, unless you've changed 
 
 Congratulations !! You have completed all the technical steps and should have now a paired EV3 + Echo solution. Go ahead and use it to roll some virtual dice in your favourite board game(s) !!
 
-## High level overview of solution logic
+## High level overview of the solution design
+We combine EV3 Brick and Amazon Echo's strengths in this solution. Echo device equipped with the new Alexa skill will provide speech recognition and speech synthesis capabilities, while EV3 Brick will use its colour sensor to identify the colour of the shown token or card, and its touch sensor to detect the haptic input from the player.
 
-EV3 will be responsible for the colour analysis of the player's token or card and passing those details to Echo, which in turn will advise then each player on the number of steps (between 2 and 12) to be taken, immitating virtual dice rolling.
+If you'll check **index.js** of the hosted Alexa skill, you will see that upon activation of the skill through its invocation name, e.g.
+```
+"Alexa, open robot dice roller"
+```
+, it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, it will verbally confirm interface activation.
+```
+let speechOutput = "Ho-ho-ho, Chappie's voice interface activated";
+    return handlerInput.responseBuilder
+        .speak(speechOutput + BG_MUSIC)
+        .addDirective(Util.buildStartEventHandler(token,60000, {}))
+        .getResponse();
+```
 
-```
-pip install paho-mqtt
-```
+
+
+
+
+
+
+
 
 ## Working model - Demo
 You can find short demo of the working solution here on [YouTube](https://youtu.be/Gui9sqyglFw)
