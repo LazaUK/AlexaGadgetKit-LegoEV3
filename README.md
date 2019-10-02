@@ -67,7 +67,7 @@ If you'll check **index.js** of the hosted Alexa skill, you will see that upon a
 ```
 "Alexa, open robot dice roller"
 ```
-It will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, it will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes.
+it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, Echo device will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes as per below overwriting shorter system's default timeout settings.
 ```
     let speechOutput = "Ho-ho-ho, Chappie's voice interface activated";
         return handlerInput.responseBuilder
