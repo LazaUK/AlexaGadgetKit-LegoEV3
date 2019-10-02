@@ -67,7 +67,7 @@ If you'll check **index.js** of the hosted Alexa skill, you will see that upon a
 ```
 "Alexa, open robot dice roller"
 ```
-it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, Echo device will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes as per below overwriting shorter system's default timeout settings.
+it will use **LaunchRequestHandler** to verify token provided by EV3 Brick. If successful, Echo device will verbally confirm interface activation. It will also keep handling events from EV3 Brick for 10 minutes as per below, overwriting system's shorter default timeout settings.
 ```
     let speechOutput = "Ho-ho-ho, Chappie's voice interface activated";
         return handlerInput.responseBuilder
@@ -94,19 +94,19 @@ Echo device will use its **SetCommandIntentHandler** to send a directive to EV3 
         .addDirective(directive)
         .getResponse();
 ```
-On EV3 side we should have **mission-dice.py** application running. Its **on_custom_mindstorms_gadget_control** function will extract command name from the payload, set **quiz mode** on and fire event back to Echo, to request player's token.
+On EV3 side we should have **mission-dice.py** application already running. Its **on_custom_mindstorms_gadget_control** function will extract command name from the payload of received directive, set **quiz mode** on and fire **Speech** event back to Echo, requesting player's token.
 ```
     if command in Command.QUIZ.value:
         self.quiz_mode = True
         self._send_event(EventName.SPEECH, {'speechOut': "Show me your coloured token"})
 ```
-Players in turn would need to show their tokens / cards to EV3 Brick by holding them 5-10mm above his colour sensor (left shoulder, if you assembled the robot as per the original Lego instruction) and then press its touch sensor (right shoulder, if you assembled the robot as per the original Lego instruction).
+Players in turn would need to show then their tokens / cards to EV3 Brick by holding them 5-10mm above its colour sensor (left shoulder, if you assembled the robot as per the original Lego instruction) and then press its touch sensor (right shoulder, if you assembled the robot as per the original Lego instruction).
 
-EV3 had its colour sensor set in Lego bricks colour detection mode, as per the configuration on line 69.
+We have EV3's colour sensor set in Lego-bricks-colour detection mode, as per the configuration in line 69.
 ```
 self.cl.mode = 'COL-COLOR'
 ```
-So, while **quiz mode** is **on**, it will check whether touch sensor is being pressed. If yes, it will read detected colour code from the colour sensor and send it as a part of **Touch** event back to Echo device.
+So, while **quiz mode** is **on**, it will be checking whether touch sensor is pressed. If yes, it colour code from the colour sensor will be read and sent as a part of **Touch** event back to Echo device.
 ```
     while self.quiz_mode:
         if self.ts.is_pressed:
@@ -122,7 +122,7 @@ In Alexa skill's **index.js** file in line 30 we provided Echo with the array of
 ```
 const COLOR_NAMES = ["No color", "Black", "Blue", "Green", "Yellow", "Red", "White", "Brown"];
 ```
-So, when Echo device receives an event and its **EventsReceivedRequestHandler** verifies that it's a **Touch** specific one, it will read the code. If it's bigger than 0, i.e. colour sensor was able to determine the colour, Alexa skill will generate a random number between 2 and 12 to simulate dice roller and then will instruct relevant player on how many steps he / she needs to take.
+So, when Echo device receives an event and its **EventsReceivedRequestHandler** verifies that it's a **Touch** specific one, it will read the colour code first. If it's bigger than 0, i.e. colour sensor was able to determine certain colour, then Alexa skill will generate a random number between 2 and 12 to simulate dice roller and instruct relevant player on the number of steps to take.
 ```
     if (name === 'Touch') {
         let answer = parseInt(payload.answer);
