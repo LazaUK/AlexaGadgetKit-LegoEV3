@@ -140,5 +140,5 @@ So, when Echo device receives an event and its **EventsReceivedRequestHandler** 
 That's all ! Now try it for yourselves. And as they used to say in "Hunger Games", **may the odds be ever in your favor!!**
 
 ## Working model - YouTube video
-You can find short demo of the working solution here on [YouTube](https://youtu.be/Gui9sqyglFw)
+You can find short demo of the working solution here on [YouTube](https://youtu.be/mgY3fwfAu8E)
 
